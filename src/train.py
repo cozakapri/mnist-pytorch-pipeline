@@ -112,6 +112,9 @@ def fit(
 
         save_checkpoint(model, optimizer, epoch, val_loss, config, f"last_{label}.pth")
 
+        if config.save_all_epochs:
+            save_checkpoint(model, optimizer, epoch, val_loss, config, f"{label}_epoch_{epoch:02d}.pth")
+
     return history
 
 

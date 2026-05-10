@@ -13,7 +13,8 @@ wheels/
 data/
 
 # Training checkpoints and outputs
-checkpoints/
+checkpoints/*
+!checkpoints/best_*.pth
 runs/
 
 # Jupyter checkpoints

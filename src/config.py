@@ -25,3 +25,6 @@ class Config:
     # Ostalo
     checkpoint_dir: str = "./checkpoints"
     seed: int = 42
+    # Čuva checkpoint svake epohe kao <label>_epoch_NN.pth
+    # Korisno za velike modele gde trening traje dugo i postoji rizik od pada
+    save_all_epochs: bool = False

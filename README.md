@@ -1,7 +1,7 @@
 # mnist-pytorch-pipeline
 
 Kompletan PyTorch trening pipeline za klasifikaciju MNIST cifara.  
-Demonstracija profesionalnog ML projekta — dataset, trening, regularizacija, checkpointing, evaluacija i analiza grešaka.
+Demonstracija VNM projekta - dataset, trening, regularizacija, checkpointing, evaluacija i analiza grešaka.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cozakapri/mnist-pytorch-pipeline/blob/main/mnist_pipeline.ipynb)
 &nbsp;
@@ -27,7 +27,7 @@ jupyter notebook mnist_pipeline.ipynb
 1. Klikni **Open in Colab** dugme iznad
 2. Pokreni prvu ćeliju — setup se izvršava automatski
 3. Pokreni trening na besplatnom GPU-u
-4. Na kraju treninga pokreni **download ćeliju** — preuzima `checkpoints.zip`
+4. Na kraju treninga pokreni **download ćeliju** - preuzima `checkpoints.zip`
 5. Raspakuj u lokalni `checkpoints/` folder
 6. Nastavi evaluaciju i analizu grešaka lokalno u VSCode-u
 
@@ -35,7 +35,7 @@ jupyter notebook mnist_pipeline.ipynb
 
 ## Zašto Colab za trening?
 
-PyTorch zauzima ~2 GB i instalira se jednom sa `uv sync`. Problem nije instalacija — problem je **brzina treninga bez GPU-a**.
+PyTorch zauzima ~2 GB i instalira se jednom sa `uv sync`. Problem nije instalacija - problem je **brzina treninga bez GPU-a**.
 
 | | CPU (bez GPU) | GPU (Colab / NVIDIA) |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ PyTorch zauzima ~2 GB i instalira se jednom sa `uv sync`. Problem nije instalaci
 | CNN trening | veoma sporo | ~6–7 min |
 | **Evaluacija i inferencija** | **brzo** | brzo |
 
-Trening radi na Colabu. Sve ostalo — pregledanje koda, evaluacija, inferencija — radi lokalno normalno.
+Trening radi na Colabu. Sve ostalo - pregledanje koda, evaluacija, inferencija radi lokalno normalno.
 
 ---
 
